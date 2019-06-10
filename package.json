@@ -1,0 +1,36 @@
+{
+  "name": "@gdbc/loopback-connector-contracts-web3",
+  "version": "0.0.1",
+  "description": "Loopback connector for a contract built on web3",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdebenito/loopback-connector-contracts-web3.git"
+  },
+  "keywords": [
+    "loopback",
+    "connector",
+    "web3",
+    "contract",
+    "blockchain",
+    "smart",
+    "smartcontract"
+  ],
+  "author": "gdbc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdebenito/loopback-connector-contracts-web3/issues"
+  },
+  "homepage": "https://github.com/gdebenito/loopback-connector-contracts-web3#readme",
+  "dependencies": {
+    "strong-globalize": "^4.1.3",
+    "truffle-hdwallet-provider": "^1.0.10",
+    "web3": "^1.0.0-beta.55"
+  },
+  "devDependencies": {
+    "strong-globalize-cli": "^5.0.1"
+  }
+}

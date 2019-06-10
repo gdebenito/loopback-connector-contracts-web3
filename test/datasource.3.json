@@ -1,0 +1,153 @@
+{
+	"provider": "http://localhost:9545",
+	"mnemonic": {
+		"method": "raw",
+		"value": "hospital nature toy kitchen cook pull blush little amount develop welcome over"
+	},
+	"contracts": [
+		{
+			"contractName": "Migrations",
+			"abi": [
+				{
+					"constant": true,
+					"inputs": [],
+					"name": "last_completed_migration",
+					"outputs": [
+						{
+							"name": "",
+							"type": "uint256"
+						}
+					],
+					"payable": false,
+					"stateMutability": "view",
+					"type": "function"
+				},
+				{
+					"constant": true,
+					"inputs": [],
+					"name": "owner",
+					"outputs": [
+						{
+							"name": "",
+							"type": "address"
+						}
+					],
+					"payable": false,
+					"stateMutability": "view",
+					"type": "function"
+				},
+				{
+					"inputs": [],
+					"payable": false,
+					"stateMutability": "nonpayable",
+					"type": "constructor"
+				},
+				{
+					"constant": false,
+					"inputs": [
+						{
+							"name": "completed",
+							"type": "uint256"
+						}
+					],
+					"name": "setCompleted",
+					"outputs": [],
+					"payable": false,
+					"stateMutability": "nonpayable",
+					"type": "function"
+				},
+				{
+					"constant": false,
+					"inputs": [
+						{
+							"name": "new_address",
+							"type": "address"
+						}
+					],
+					"name": "upgrade",
+					"outputs": [],
+					"payable": false,
+					"stateMutability": "nonpayable",
+					"type": "function"
+				}
+			],
+			"address": "0x581512A7bb716E307328FC0343393c56e0A51D34",
+			"options": {
+				"defaultAccount": "0x8DBe6804b175977a387CbA724Ef3fc0F2FD39212"
+			}
+		},
+		{
+			"contractName": "SimpleStorage",
+			"abi": [
+			  {
+				"constant": false,
+				"inputs": [
+				  {
+					"name": "id",
+					"type": "uint256"
+				  },
+				  {
+					"name": "state",
+					"type": "uint256"
+				  },
+				  {
+					"name": "dataHash",
+					"type": "uint256"
+				  }
+				],
+				"name": "setHash",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			  },
+			  {
+				"constant": true,
+				"inputs": [
+				  {
+					"name": "id",
+					"type": "uint256"
+				  },
+				  {
+					"name": "state",
+					"type": "uint256"
+				  }
+				],
+				"name": "getHash",
+				"outputs": [
+				  {
+					"name": "dataHash",
+					"type": "uint256"
+				  }
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			  },
+			  {
+				"constant": true,
+				"inputs": [
+				  {
+					"name": "id",
+					"type": "uint256"
+				  }
+				],
+				"name": "getHashArray",
+				"outputs": [
+				  {
+					"name": "dataHash",
+					"type": "uint256[4]"
+				  }
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			  }
+			],
+			"address": "0x8B281A085F341d229d69BbA49D4e84917f9C79a7",
+			"options": {
+				"defaultAccount": "0x8DBe6804b175977a387CbA724Ef3fc0F2FD39212"
+			}
+		}
+	]
+}
